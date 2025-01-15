@@ -16,7 +16,7 @@ import { registerSchema } from "../../../schemes/registration/registerSchema";
 // fetch
 import callApi from "../../../helpers/callApi";
 // import { valuesToFormData } from "../../../helpers/valuesToFormData";
-import { valuesToFormData } from "../../../helpers/valuesToFormdata";
+// import { valuesToFormData } from "../../../helpers/valuesToFormdata";
 import { useQuery } from "@apollo/client";
 import { GET_COUNTRIES } from "../../../queries/countriesQuery";
 import { GET_CITIES } from "../../../queries/citiesQuery";
@@ -59,7 +59,13 @@ const RegisterForm = () => {
     delete values["first_name"];
     delete values["last_name"];
 
-    const formData = valuesToFormData(values);
+    // const formData = valuesToFormData(values);
+    for (const key in obj) {
+      if (obj.hasOwnProperty(key)) {
+        formData.append(key, obj[key]);
+      }
+    }
+    
     callApi(undefined, "multipart/form-data")
       .post("/owners/auth/register", formData)
       .then((data) => {
