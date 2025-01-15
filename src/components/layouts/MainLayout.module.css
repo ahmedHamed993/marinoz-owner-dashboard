@@ -1,0 +1,12 @@
+.layout {
+  display: flex;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: #fafcff;
+  position: relative;
+}
+
+.pages_container {
+  margin: 20px 0;
+  min-height: calc(100vh - 40px);
+}

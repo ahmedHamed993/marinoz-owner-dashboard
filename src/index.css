@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+:root {
+  --primary-color: 3, 78, 162; /* #C47D60 */
+
+  --alert: 240, 30, 30; /* #F01E1E */
+  --success: 3, 152, 85; /* #039855 */
+  --yellow: 255, 209, 48; /* #FFD130 */
+  --pending: 250, 163, 27;
+
+  --light-gray: 225, 215, 210; /* #E1D7D2 */
+  --mid-gray: 97, 92, 90; /* #615C5A */
+  --dark-gray: 70, 67, 67; /* #464343 */
+
+  --gray-50: 245, 242, 240; /* Very light gray */
+  --gray-100: 235, 230, 225; /* Light gray */
+  --gray-200: 225, 215, 210; /* Provided light shade */
+  --gray-300: 200, 190, 185; /* Intermediate light gray */
+  --gray-400: 160, 150, 145; /* Medium-light gray */
+  --gray-500: 128, 120, 115; /* True mid-gray */
+  --gray-600: 97, 92, 90; /* Provided mid shade */
+  --gray-700: 85, 80, 78; /* Intermediate dark gray */
+  --gray-800: 78, 74, 72; /* Medium-dark gray */
+  --gray-900: 70, 67, 67; /* Provided dark shade */
+  --gray-950: 50, 48, 47; /* Very dark gray */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  font-family: "Lato", serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+body {
+  font-family: "Lato", serif;
+}
+/* container  */
+/* Responsive Global Container */
+.container {
+  width: 100%;
+  max-width: 100%; /* Default for small screens */
+  margin: 0 auto; /* Center the container */
+  padding-left: 16px; /* Default padding */
+  padding-right: 16px;
+  box-sizing: border-box; /* Include padding and border in width */
+  height: 100%;
+}
+
+.main-shadow {
+  box-shadow: 0px 4px 8px #00000008;
+}
+
+/* Breakpoints for responsiveness */
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}

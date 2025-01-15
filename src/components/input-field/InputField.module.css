@@ -1,0 +1,25 @@
+.input_field label {
+  color: rgb(var(--primary-color));
+  font-size: 14px;
+  display: block;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+.input_field input {
+  border: 1px solid rgb(var(--light-gray));
+  color: 1px solid rgb(var(--mid-gray));
+  font-size: 14px;
+  padding: 0.9rem 0.75rem;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+.input_field p {
+  color: rgb(var(--alert));
+  font-size: 12px;
+  padding-left: 8px;
+}
+
+.input_field > * {
+  width: 100%;
+}

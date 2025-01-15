@@ -1,0 +1,14 @@
+.select_container label {
+  color: rgb(var(--primary-color));
+  font-size: 14px;
+  display: block;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.select_container p {
+  color: rgb(var(--alert));
+  font-size: 12px;
+  padding-left: 8px;
+}
