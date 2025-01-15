@@ -15,7 +15,8 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { registerSchema } from "../../../schemes/registration/registerSchema";
 // fetch
 import callApi from "../../../helpers/callApi";
-import { valuesToFormData } from "../../../helpers/valuesToFormData";
+// import { valuesToFormData } from "../../../helpers/valuesToFormData";
+import { valuesToFormData } from "../../../helpers/valuesToFormdata";
 import { useQuery } from "@apollo/client";
 import { GET_COUNTRIES } from "../../../queries/countriesQuery";
 import { GET_CITIES } from "../../../queries/citiesQuery";
